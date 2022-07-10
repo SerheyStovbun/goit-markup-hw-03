@@ -17,6 +17,29 @@
     --footer-background:#2F303A;
     }
     
+    /*Reset start*/
+    *{
+        box-sizing: border-box;
+    }
+    p,
+    h1,
+    h2,    
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    ol{
+        margin: 0;
+    }
+    ul,ol{
+        padding-left: 0;
+    }
+        img {
+            display: block;
+        }
+    /*Reset END*/
+
 body {
     background-color: var(--primary-white-color);
      color: var(--primary-text-color);
@@ -254,4 +277,10 @@ color: var(--primary-text-color);
         line-height: 1.88;   
         letter-spacing: 0.03em;    
         color: var(--secondary-text-color);
+}
+/* Flex conteiner markUp*/
+
+.conteiner{
+    outline: red solid 1px;
+    width: 1200px;
 }
