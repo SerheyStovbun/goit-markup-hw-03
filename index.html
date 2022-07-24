@@ -17,20 +17,20 @@
     <body class="page">
         <!--Шапка сайта site head-->
         <header class="page-header section no-margin">
-            <div class="conteiner">
-                <nav>
+            <div class="conteiner main-navigation">
+                <nav class="navigation">
                     <a href="./index.html" class="header-logo "> Web<span class="header-logo-color">Studio</span>
                         
                     </a>
                     <ul class="site-nav liststyle">
-                        <li><a href="./index.html" class="link current">Студия</a></li>
-                        <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                        <li><a href="./community.html" class="link ">Контакты</a></li>
+                        <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+                        <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                        <li class="item"><a href="./community.html" class="link ">Контакты</a></li>
                     </ul>  
                 </nav>         
                 <ul class="auth-nav liststyle">
-                    <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="link secondlink">+38 096 111 11 11</a></li>
+                    <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                    <li class="item"><a href="tel:+380961111111" class="link secondlink">+38 096 111 11 11</a></li>
                 </ul>
             </div>
 
@@ -41,7 +41,7 @@
             <section class="hero section" >
                 <div class="conteiner">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button class="orderbutton primary-btn" type="button"><span btn-text>Заказать услугу</span></button>
+                    <button class="orderbutton primary-btn" type="button"><span btn-text class="btn-text">Заказать услугу</span></button>
                 </div>
             </section>
                 
@@ -51,22 +51,22 @@
                 <div class="conteiner">        
                     <h2 class="visually-hidden">Наши преимущества</h2>
                     <ul class="benefits-list liststyle">
-                        <li>
+                        <li class="benefits-item">
                             <h3 class="title">Внимание к деталям</h3>
                             <p class="benefits-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>                
                         </li>
                 
-                        <li>
+                        <li class="benefits-item">
                             <h3 class="title">Пунктуальность</h3>
                             <p class="benefits-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                         </li>
                 
-                        <li>
+                        <li class="benefits-item">
                             <h3 class="title">Планирование</h3>
                             <p class="benefits-description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                         </li>
                 
-                        <li>
+                        <li class="benefits-item">
                             <h3 class="title">Современные технологии</h3>
                             <p class="benefits-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                         </li>
@@ -80,13 +80,13 @@
                 <div class="conteiner">
                     <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="doing-list liststyle">
-                        <li>
+                        <li class="doing-item">
                             <img src="./images/imgscetch.png" alt="Схема бизнесс процесса" width="370">
                         </li>
-                        <li>
+                        <li class="doing-item">
                             <img src="./images/imgphone.png" alt="Вэб приложение" width="370">
                             </li>
-                            <li>
+                            <li class="doing-item">
                             <img src="./images/imghexagon.png" alt="Дизайн интерфейса юи" width="370">
                         </li>
                     </ul>
@@ -100,22 +100,22 @@
                         Наша команда
                     </h2>
                     <ul class="team-list liststyle">
-                        <li>
+                        <li class="team-item">
                             <img src="./images/img-pd.jpg" alt="Игорь Демьчненко, дизайнер продукта" width="270">
                             <h3 class="team-head">Игорь Демьяненко</h3>
                             <p class="team-description" lang="en">Product Designer</p>
                         </li>
-                        <li>
+                        <li class="team-item">
                             <img src="./images/img-fd.jpg" alt="Ольга Репина, фронт-енд разработчик" width="270">
                             <h3 class="team-head">Ольга Репина</h3>
                             <p class="team-description" lang="en">Frontend Developer</p>
                         </li>
-                        <li>
+                        <li class="team-item">
                             <img src="./images/img-mrk.jpg" alt="Николай Тарасов, маркетолог" width="270">
                             <h3 class="team-head">Николай Тарасов</h3>
                             <p class="team-description" lang="en">Marketing</p>
                         </li>
-                        <li>
+                        <li class="team-item">
                             <img src="./images/img-uid.jpg" alt="Михаил Ермаков, дизайнер интерфейса" width="270">
                             <h3 class="team-head">Михаил Ермаков</h3>
                             <p class="team-description" lang="en">UI Designer</p>
@@ -125,7 +125,7 @@
             </section> 
         </main>
         <!--Футер /Footer-->
-        <footer class="footer section no-padding no-margin">  
+        <footer class="footer section no-margin">  
             <div class="conteiner">                
                 <a href="./index.html" class="footer-logo"> Web<span class="footer-logo-color">Studio</span>
                         
@@ -133,14 +133,14 @@
                 <address>
                     <ul class="address-list liststyle">
                 
-                        <li>
+                        <li class="address-item">
                             <a class="footerlink" href="https://goo.gl/maps/jDqAUScKy7oYHd1V8" target="_blank"
                                 rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
-                        <li>
+                        <li class="address-item">
                             <a class="footerlink" href="mailto:info@example.com">info@example.com</a>
                         </li>
-                        <li>
+                        <li class="address-item">
                             <a class="footerlink" href="tel:+380991111111">+38 099 111 11 11</a>
                         </li>
                     </ul>

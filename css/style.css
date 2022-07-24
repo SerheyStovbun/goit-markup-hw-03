@@ -15,6 +15,7 @@
     --secondary-link-color:#757575;
     --active-btn-background:#2196F3;
     --footer-background:#2F303A;
+    --nav-item-height:16px;
     }
     
     /*Reset start*/
@@ -113,12 +114,12 @@ border-radius: 4px;
 /*--------------------------Index.html Hero--------------------*/
 
 .hero{
-    background-color: var(--footer-background);    
+    background-color: var(--footer-background);
     
     }
 
 .hero-title {    
-   
+   text-align: center;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.37;
@@ -165,7 +166,7 @@ border-radius: 4px;
 /*----------------------Index.html What are we doing---------------*/
 
 .section-title,
-.team-titl{
+.team-title{
     font-family: var(--primary-font-family);        
         font-weight: 700;
         font-size: 36px;
@@ -279,25 +280,20 @@ color: var(--primary-text-color);
         letter-spacing: 0.03em;    
         color: var(--secondary-text-color);
 }
-/* Flex conteiner markUp*/
+/* index html Flex conteiner markUp*/
 
 .conteiner{
     outline: red solid 1px;
     width: 1200px;
     padding-left: 15px;
-    padding-right: 15px;
-    
-    
-    
+    padding-right: 15px;        
 }
 
 .section{
     padding: 0px 200px 0px 200px;
     width: 1600px;
-    outline: green solid 2px;
-    display: inline-flex;
-    margin-bottom: 94px;
-     
+    outline: green solid 2px;    
+    margin: 0px 0px 94px 0px;     
 }
 
 .section.no-padding{
@@ -309,21 +305,136 @@ color: var(--primary-text-color);
     margin-top: 0px;
 }
 
-
-.primary-btn{
-    margin: 0px 8px 0px 0px;
-    text-align: center;
+.main-navigation{ 
+    display: flex;   
+    align-items: center;
+    justify-content: space-around;
+}
+.navigation {
+    display: inherit;
+    align-items: inherit;
+}
+.header-logo{
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
-.hero{
-    min-height: 600px;
+
+.site-nav{
+    display: inherit;
+}
+.site-nav .item{
+    height: var(--nav-item-height);
+}
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.auth-nav{
+    display: flex;
+}
+.auth-nav .item{
+    height: var(--nav-item-height);
+}
+.auth-nav .item:not(:last-child){
+    margin-right: 50px;
+}
+
+.hero.section {
+    width: 1584px;
+    padding-right: 184px;
+    margin-right: 16px;
+    min-height: 600px; 
     text-align: center;
+}
+.hero .conteiner{
+    padding-top: 200px;
+    padding-bottom: 200px;       
+}
+.hero-title{
+    margin: auto;
+    width: 696px;
+}
+
+.primary-btn {    
+    text-align: center;
+    }
+.btn-text{
+    margin: 10px 32px;
 }
 
 .orderbutton {
-    margin-top: 30px;
-    padding: 11px 32px;
+    margin-top: 30px;    
     min-width: 200px;
     height: 50px;
+    
 }
 
+.benefits-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.benefits-item{
+    width: 270px;
+}
+.benefits-item:not(:last-child){
+    margin-right: 30px;
+}
+.benefits-description{
+    padding-top: 10px;    
+}
+
+.doing-list{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.doing-item{
+    width: 370px;
+}
+.doing-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.team .conteiner{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team-list{
+    padding-top: 50px;    
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.team-item{
+    background-color: #fff;
+    width: 270px;
+}
+.team-item:not(:last-child){
+    margin-right: 30px;
+}
+.team-titl{
+    
+}
+.team-head{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.team-description{
+    padding-bottom: 30px;
+}
+
+.footer .conteiner{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-logo{
+    display: block;
+    padding-bottom: 20px;
+}
+.address-item:not(:last-child){
+    padding-bottom: 9px;
+}
+
+/*Portfolio html Flex conteiner markUp*/
